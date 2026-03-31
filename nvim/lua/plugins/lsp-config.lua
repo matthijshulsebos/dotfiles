@@ -12,11 +12,11 @@ return {
     config = function()
       local mason_lsp = require("mason-lspconfig")
       mason_lsp.setup({
-        ensure_installed = { "pyright", "ruff", "clangd", "lua_ls" },
+        ensure_installed = { "pyright", "ruff", "clangd", "lua_ls", "bashls" },
       })
 
       -- Attach LSPs using the new API
-      local servers = { "pyright", "ruff", "clangd", "lua_ls" }
+      local servers = { "pyright", "ruff", "clangd", "lua_ls", "bashls" }
       for _, server in ipairs(servers) do
         vim.lsp.config(server, {})
         vim.lsp.enable(server)
