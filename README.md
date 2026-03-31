@@ -22,8 +22,18 @@ ln -s ~/Documents/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 ### Neovim dependencies
 
+macOS:
 ```bash
 brew install neovim ripgrep shellcheck
+```
+
+Linux (apt):
+```bash
+sudo apt install neovim ripgrep shellcheck
+```
+
+Both:
+```bash
 pip install pynvim
 npm install -g neovim
 ```
